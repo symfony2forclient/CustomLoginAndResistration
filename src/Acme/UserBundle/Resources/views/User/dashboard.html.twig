@@ -1,0 +1,17 @@
+{% extends 'AcmeUserBundle::layout.html.twig' %}
+
+{% block title %}Dash board{% endblock %}
+{% block message %} 
+        {% if error is defined %}
+            <div class="alert alert-dismissable alert-danger">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                 <div>{{ error.message }}</div>
+            </div>
+        {% endif %}   
+{% endblock message %}
+{% block content %}   
+    <div class="col-md-10">
+         <h1> Hello, {{user.email}} </h1>
+         <h2> Welcome to the site.</h2>
+    </div>            
+{% endblock content %}

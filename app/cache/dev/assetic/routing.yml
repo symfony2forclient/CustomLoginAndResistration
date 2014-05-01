@@ -1,0 +1,5 @@
+_assetic:
+    resource: .
+    type: assetic
+_app:
+    resource: /home/julfiker/projects/php/sf_demo/CustomLoginAndResistration/app/config/routing_dev.yml
